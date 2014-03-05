@@ -110,7 +110,7 @@ var search_dates = function(ini, mid, end, direct) {
 		            'Cookie': cookies}
 		    };
 
-			text += '<h3>Salida de Madrid el '+ ini +' , salida de Miami el ' + mid +' , vuelta a Madrid el ' + end + '</h3>';
+			text += '<h3>Salida de Madrid el '+ ini +' , salida de Miami el ' + mid +' , vuelta a Madrid el ' + end + ' ('+(direct=='on'?'sin':'con')+' escalas)</h3>';
 			console.log(text);
 
 		    var req = http.request(options_search, callback_search(ini, mid, end, direct, callback));
